@@ -2,10 +2,8 @@ import { useState } from "react";
 import { StudentSearch } from "@/components/StudentSearch";
 import { AddStudentForm } from "@/components/AddStudentForm";
 import { StudentList } from "@/components/StudentList";
-import { PdfUpload } from "@/components/PdfUpload";
 import { Student } from "@/types/student";
 import { GraduationCap } from "lucide-react";
-import { toast } from "sonner";
 
 const Index = () => {
   const [students, setStudents] = useState<Student[]>([
@@ -19,11 +17,6 @@ const Index = () => {
 
   const handleAddStudent = (student: Student) => {
     setStudents([...students, student]);
-  };
-
-  const handleStudentsImported = (importedStudents: Student[]) => {
-    setStudents([...students, ...importedStudents]);
-    toast.success(`${importedStudents.length} students imported successfully`);
   };
 
   return (
@@ -58,10 +51,7 @@ const Index = () => {
           
           <div>
             <h2 className="text-2xl font-semibold mb-4 text-foreground">Manage</h2>
-            <div className="space-y-6">
-              <PdfUpload onStudentsImported={handleStudentsImported} />
-              <AddStudentForm onAddStudent={handleAddStudent} />
-            </div>
+            <AddStudentForm onAddStudent={handleAddStudent} />
           </div>
         </div>
       </div>
