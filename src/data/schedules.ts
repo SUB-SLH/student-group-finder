@@ -195,7 +195,7 @@ weeks.forEach((week, weekIndex) => {
     class: className,
     group: `G${f1ThuGroup}-MPSI2`,
     day: "Thursday",
-    time: "13:00",
+    time: "18:00",
     room: "salle 11",
     week: week,
   });
