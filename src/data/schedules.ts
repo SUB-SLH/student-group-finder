@@ -44,9 +44,9 @@ weeks.forEach((week, weekIndex) => {
   const m1Wed2Group = rotateGroup(5, weekIndex);
   schedules.push({
     id: `S${sessionId++}`,
-    teacherId: "M1",
-    teacherName: teacherNames.M1,
-    subject: subjects.M1,
+    teacherId: "M2",
+    teacherName: teacherNames.M2,
+    subject: subjects.M2,
     class: className,
     group: `G${m1Wed1Group}-MPSI2`,
     day: "Wednesday",
@@ -56,9 +56,9 @@ weeks.forEach((week, weekIndex) => {
   });
   schedules.push({
     id: `S${sessionId++}`,
-    teacherId: "M1",
-    teacherName: teacherNames.M1,
-    subject: subjects.M1,
+    teacherId: "M2",
+    teacherName: teacherNames.M2,
+    subject: subjects.M2,
     class: className,
     group: `G${m1Wed2Group}-MPSI2`,
     day: "Wednesday",
