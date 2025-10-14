@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react";
 import { Student } from "@/types/student";
+import { StudentSchedule } from "./StudentSchedule";
 
 interface StudentSearchProps {
   students: Student[];
@@ -104,6 +105,8 @@ export const StudentSearch = ({ students }: StudentSearchProps) => {
           </CardContent>
         </Card>
       )}
+
+      {exactMatch && <StudentSchedule student={exactMatch} />}
     </div>
   );
 };
