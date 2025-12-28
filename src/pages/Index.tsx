@@ -90,10 +90,10 @@ const Index = () => {
             <GraduationCap className="h-8 w-8" />
           </div>
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Student Group Finder
+            Colloscope d MPSI2
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Search for students and discover their assigned groups instantly
+            9lb 3la smitk ila knti MPSI2 w khtar la semaine w chuf schedule dialk dl colle.
           </p>
         </div>
 
@@ -101,8 +101,8 @@ const Index = () => {
           <div className="lg:col-span-2">
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-foreground">Search Students</h2>
-                <StudentSearch students={students} />
+                <h2 className="text-2xl font-semibold mb-4 text-foreground">9lb 3la smitk</h2>
+                <9lb 3la smitk students={students} />
               </div>
               
               <div>
