@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { StudentSearch } from "@/components/StudentSearch";
-import { AddStudentForm } from "@/components/AddStudentForm";
 import { StudentList } from "@/components/StudentList";
 import { Student } from "@/types/student";
 import { GraduationCap } from "lucide-react";
@@ -78,10 +77,7 @@ const Index = () => {
 { name: "ZAHRI Louaye", class: "MPSI3", group: "G8-MPSI3" },
   ]);
 
-  const handleAddStudent = (student: Student) => {
-    setStudents([...students, student]);
-  };
-
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/20 to-background">
       <div className="container mx-auto px-4 py-12">
@@ -121,10 +117,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">Manage</h2>
-            <AddStudentForm onAddStudent={handleAddStudent} />
-          </div>
+         
         </div>
       </div>
     </div>
