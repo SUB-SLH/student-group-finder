@@ -31,10 +31,8 @@ let sessionId = 1;
 
 // Helper function to rotate group number based on week
 const rotateGroup = (baseGroup: number, weekIndex: number): number => {
-  const rotated = baseGroup + weekIndex;
-  return rotated > 8 ? rotated - 8 : rotated;
+  return ((baseGroup - 1 + weekIndex) % 8) + 1;
 };
-
 // MPSI2 Schedule - Based on provided data
 weeks.forEach((week, weekIndex) => {
   const className = "MPSI2";
