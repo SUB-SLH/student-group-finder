@@ -86,9 +86,18 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/20 to-background">
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-primary-foreground rounded-2xl mb-4">
-            <GraduationCap className="h-8 w-8" />
-          </div>
+          <div className="flex items-center justify-center gap-4 mb-4">
+  <img 
+    src="/logo-abulcasis.png" 
+    alt="Logo Abulcasis" 
+    className="h-20 w-auto"
+  />
+  <img 
+    src="/logo-alzahrawi.png" 
+    alt="Logo Alzahrawi" 
+    className="h-20 w-auto"
+  />
+</div>
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             Colloscope d MPSI2
           </h1>
@@ -101,8 +110,8 @@ const Index = () => {
           <div className="lg:col-span-2">
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-foreground">9lb 3la smitk</h2>
-                <9lb 3la smitk students={students} />
+                <h2 className="text-2xl font-semibold mb-4 text-foreground">StudentSearch</h2>
+                <StudentSearch students={students} />
               </div>
               
               <div>
