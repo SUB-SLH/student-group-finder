@@ -1,7 +1,7 @@
 import { ScheduleSession } from "@/types/schedule";
 
 // Generate schedules for multiple weeks
-const weeks = ["14-oct", "21-oct", "28-oct", "4-nov"];
+const weeks = ["13-oct", "20-oct", "27-oct", "3-nov", "10-nov", "17-nov", "24-nov", "1-déc", "15-déc", "22-déc", "29-déc", "5-janv", "12-janv", "19-janv", "2-févr", "9-févr", "16-févr", "23-févr", "2-mars","23-mars", "30-mars", "6-avr", "13-avr", "20-avr", "27-avr", "11-mai", "18-mai", "25-mai", "1-juin", "8-juin", "15-juin"];
 
 const teacherNames: { [key: string]: string } = {
   M1: "Prof. BASSO",
@@ -195,7 +195,7 @@ weeks.forEach((week, weekIndex) => {
     class: className,
     group: `G${f1ThuGroup}-MPSI2`,
     day: "Thursday",
-    time: "18:00",
+    time: "13:00",
     room: "salle 11",
     week: week,
   });
