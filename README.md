@@ -11,3 +11,5 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+  Special thanks to Lovable.AI for providing me with the UI.
